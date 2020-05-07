@@ -43,6 +43,18 @@ q.choice_set.create(choice_text='The sky', votes=0)
 q.choice_set.create(choice_text='Just hacking again', votes=0)
 ```
 
+You can verify this worked by running the following command and verifying all of your choices are there:
 
+```
+q.choice_set.all()
+```
 
-If you navigate
+If you navigate to http://127.0.0.1:8000/polls/ in your browser you will see a list with your new poll. Click on it to see your choices.
+
+## Testing
+
+Tests are located in tests.py files. To run all tests simply run
+
+```
+python manage.py test
+```
